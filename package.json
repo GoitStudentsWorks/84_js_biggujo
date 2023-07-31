@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-cooking/",
+    "build": "vite build --base=/84_js_biggujo/",
     "preview": "vite build && vite preview"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
