@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel='icon' type='image/svg+xml' href='/84_js_biggujo/assets/favicon-5d9c7ae9.svg' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>tastytreats. | Favorites</title>
+    
+    <script type="module" crossorigin src="/84_js_biggujo/assets/favorites-33202c98.js"></script>
+    <link rel="modulepreload" crossorigin href="/84_js_biggujo/assets/scroll-up-9bc39f2f.js">
+    <link rel="modulepreload" crossorigin href="/84_js_biggujo/assets/icons-f37aa445.js">
+    <link rel="stylesheet" href="/84_js_biggujo/assets/scroll-up-88da730b.css">
+    <link rel="stylesheet" href="/84_js_biggujo/assets/icons-f323795d.css">
+  </head>
+  <body>
+    <header>
+  <section class="section">
+    <div class="container">
+      <div class="header">
+        <nav class="modal-nav-orig">
+          <ul class="modal-list">
+            <li class="modal-item-list home">
+              <a href="./index.html" class="header-link">Home</a>
+            </li>
+
+            <li class="modal-item-list">
+              <a href="./favorites.html" class="header-link">Favorites</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./index.html" class="logo"
+          ><span class="colorlogo">tasty</span>treats.</a
+        >
+
+        <div class="header-menu-icons">
+          <button
+            class="shopping-cart-button header-menu-icons-button"
+            data-pop-up-order-now-open
+            type="button"
+          >
+            <svg class="shopping-cart-button-svg">
+              <use href="../img/icons.svg#cart"></use>
+            </svg>
+          </button>
+          <button class="switcher-menu header-menu-icons-button" type="button">
+            <label class="switch-button">
+              <input type="checkbox" class="switch-input" />
+              <span class="switch-button-circle"></span>
+            </label>
+          </button>
+          <button
+            class="header-menu-icons-button burger-button"
+            data-header-menu-open
+            type="button"
+          >
+            <svg class="burger-button-svg">
+              <use href="../img/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-header-menu-modal>
+      <div class="modal modal-s">
+        <button class="modal-button" data-header-menu-close type="button">
+          <svg class="modal-button-svg">
+            <use href="../img/icons.svg#close-header-modal"></use>
+          </svg>
+        </button>
+        <nav class="modal-nav">
+          <ul class="modal-list">
+            <li class="modal-item-list">
+              <a href="./index.html" class="header-modal-link">Home</a>
+            </li>
+
+            <li class="modal-item-list">
+              <a href="./favorites.html" class="header-modal-link">Favorites</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="switcher-block">
+          <button class="switcher" type="button">
+            <label class="switch-button">
+              <input type="checkbox" class="switch-input" />
+              <span class="switch-button-circle"></span>
+            </label>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-pop-up-order-now-modal>
+      <div class="modal">
+        <button class="close-btn" data-pop-up-order-now-close>
+          <svg class="close-svg">
+            <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+          </svg>
+        </button>
+        <h2 class="pop-up-recipe-title">Order now</h2>
+        <form class="email-form" id="order-form">
+          <div class="email-form-emphasized">
+            <label class="form-input-label" for="name"
+              >Name
+              <input
+                class="form-input-text"
+                type="text"
+                id="name"
+                name="name"
+                required
+                pattern="[A-Za-z]{1,32}"
+                placeholder="Your name"
+            /></label>
+
+            <label class="form-input-label" for="phone"
+              >Phone number
+              <input
+                class="form-input-text"
+                type="tel"
+                id="phone"
+                name="tel"
+                required
+                pattern="[0-9]{10}"
+                placeholder="Your telephone "
+              />
+            </label>
+
+            <label class="form-input-label" for="email"
+              >Email
+              <input
+                class="form-input-text"
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="[^@\s]+@[^@\s]+"
+                placeholder="Your email "
+              />
+            </label>
+
+            <label class="form-input-label" for="message"
+              >Comment required
+              <textarea
+                class="form-input-textarea"
+                id="message"
+                name="comment"
+                rows="5"
+              ></textarea>
+            </label>
+          </div>
+
+          <button class="form-input-button-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</header>
+
+    <a href="#" id="roll_back" class="animate">
+  <svg class="arrow-up">
+    <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#dropdown"></use></svg
+></a>
+
+
+    <main>
+      <section class='fav-hero'>
+        <div class='container'>
+          <picture>
+            <source srcset='/84_js_biggujo/assets/fav-hero-computer-42d0e7b2.webp 1x, /84_js_biggujo/assets/fav-hero-computer@2x-05ae1080.webp 2x, /84_js_biggujo/assets/fav-hero-computer@3x-79f5ee5f.webp 3x'
+                    media='(min-width: 1160px)'
+                    type='image/webp'
+            >
+            <source srcset='/84_js_biggujo/assets/fav-hero-computer-223d4627.jpg 1x, /84_js_biggujo/assets/fav-hero-computer@2x-3a0da0ce.jpg 2x, /84_js_biggujo/assets/fav-hero-computer@3x-5c9749fc.jpg 3x'
+                    media='(min-width: 1160px)'
+                    type='image/jpg'
+            >
+            <source srcset='/84_js_biggujo/assets/fav-hero-tablet-d3335cd6.webp 1x, /84_js_biggujo/assets/fav-hero-tablet@2x-08bb45ab.webp 2x, /84_js_biggujo/assets/fav-hero-tablet@3x-54902b73.webp 3x'
+                    media='(min-width: 768px)'
+                    type='image/webp'
+            >
+            <source srcset='/84_js_biggujo/assets/fav-hero-tablet-9154e534.jpg 1x, /84_js_biggujo/assets/fav-hero-tablet@2x-0fed0de2.jpg 2x, /84_js_biggujo/assets/fav-hero-tablet@3x-093ea088.jpg 3x'
+                    media='(min-width: 768px)'
+                    type='image/jpg'
+            >
+            <source srcset='/84_js_biggujo/assets/fav-hero-mobile-41416ed0.webp 1x, /84_js_biggujo/assets/fav-hero-mobile@2x-0f282a37.webp 2x, /84_js_biggujo/assets/fav-hero-mobile@3x-8b218333.webp 3x'
+                    type='image/webp'
+            >
+            <source srcset='/84_js_biggujo/assets/fav-hero-mobile-9b545f45.jpg 1x, /84_js_biggujo/assets/fav-hero-mobile@2x-8b241bb9.jpg 2x, /84_js_biggujo/assets/fav-hero-mobile@3x-dd6304e3.jpg 3x'
+                    type='image/jpg'
+            >
+            <img src='/84_js_biggujo/assets/fav-hero-computer-223d4627.jpg' alt='Some meal'>
+          </picture>
+        </div>
+      </section>
+      <section class='fav-recipes'>
+        <div class='container'>
+          <div class='fav-no-recipes is-hidden'>
+            <svg class='fav-no-recipes-chef-hat'>
+              <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#chef-hat'></use>
+            </svg>
+            <p class='fav-no-recipes-message'>It appears that you haven't added
+              any recipes to your favorites yet. To get started, you can add
+              recipes that you like to your favorites for easier access in the
+              future.</p>
+          </div>
+          <div class='fav-categories-container'>
+            <div class='fav-categories scroll-container'>
+            </div>
+          </div>
+          <div class='rendered-cards' id='rendered-cards-for-favourites'></div>
+
+        </div>
+        <div id="pagination" class="pagination tui-pagination"></div>
+      </section>
+    </main>
+    
+
+    <div class="backdrop is-hidden" data-pop-up-recipe-modal>
+  <div class="modal">
+    <button class="close-btn" data-pop-up-recipe-close>
+      <svg class="close-svg">
+        <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+      </svg>
+    </button>
+    <div class="modal-recipe-content"></div>
+    <ul class="recipe-btn-list">
+      <li>
+        <button class="btn fav">Add to favorite</button>
+      </li>
+      <li>
+        <button data-pop-up-rating-open class="rating-btn btn">
+          Give a rating
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" data-pop-up-rating-modal>
+  <div class="pop-up-rating-modal">
+    <button class="close-btn" data-pop-up-rating-close>
+      <svg class="close-svg">
+        <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+      </svg>
+    </button>
+    <div class="pop-up-rating">
+      <p class="pop-up-rating-subtitle pop-up-rating-text">Rating</p>
+      <div class="pop-up-rating-section">
+        <p class="pop-up-rating-text pop-up-rating-number">0.0</p>
+        <ul class="pop-up-rating-list">
+          <li class="pop-up-rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="1"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="2"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="3"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="4"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="5"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form name="rating-form" class="rating-form">
+      <input
+        name="email"
+        class="form-input-text"
+        type="email"
+        placeholder="Enter email"
+        required
+      />
+      <button type="submit" class="form-input-button-submit btn-send">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>

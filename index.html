@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/84_js_biggujo/assets/favicon-5d9c7ae9.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tastytreats. | Home</title>
+    
+    <script type="module" crossorigin src="/84_js_biggujo/assets/index-d6accedb.js"></script>
+    <link rel="modulepreload" crossorigin href="/84_js_biggujo/assets/scroll-up-9bc39f2f.js">
+    <link rel="modulepreload" crossorigin href="/84_js_biggujo/assets/icons-f37aa445.js">
+    <link rel="stylesheet" href="/84_js_biggujo/assets/scroll-up-88da730b.css">
+    <link rel="stylesheet" href="/84_js_biggujo/assets/icons-f323795d.css">
+    <link rel="stylesheet" href="/84_js_biggujo/assets/index-c542050c.css">
+  </head>
+  <body>
+    <header>
+  <section class="section">
+    <div class="container">
+      <div class="header">
+        <nav class="modal-nav-orig">
+          <ul class="modal-list">
+            <li class="modal-item-list home">
+              <a href="./index.html" class="header-link">Home</a>
+            </li>
+
+            <li class="modal-item-list">
+              <a href="./favorites.html" class="header-link">Favorites</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./index.html" class="logo"
+          ><span class="colorlogo">tasty</span>treats.</a
+        >
+
+        <div class="header-menu-icons">
+          <button
+            class="shopping-cart-button header-menu-icons-button"
+            data-pop-up-order-now-open
+            type="button"
+          >
+            <svg class="shopping-cart-button-svg">
+              <use href="../img/icons.svg#cart"></use>
+            </svg>
+          </button>
+          <button class="switcher-menu header-menu-icons-button" type="button">
+            <label class="switch-button">
+              <input type="checkbox" class="switch-input" />
+              <span class="switch-button-circle"></span>
+            </label>
+          </button>
+          <button
+            class="header-menu-icons-button burger-button"
+            data-header-menu-open
+            type="button"
+          >
+            <svg class="burger-button-svg">
+              <use href="../img/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-header-menu-modal>
+      <div class="modal modal-s">
+        <button class="modal-button" data-header-menu-close type="button">
+          <svg class="modal-button-svg">
+            <use href="../img/icons.svg#close-header-modal"></use>
+          </svg>
+        </button>
+        <nav class="modal-nav">
+          <ul class="modal-list">
+            <li class="modal-item-list">
+              <a href="./index.html" class="header-modal-link">Home</a>
+            </li>
+
+            <li class="modal-item-list">
+              <a href="./favorites.html" class="header-modal-link">Favorites</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="switcher-block">
+          <button class="switcher" type="button">
+            <label class="switch-button">
+              <input type="checkbox" class="switch-input" />
+              <span class="switch-button-circle"></span>
+            </label>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-pop-up-order-now-modal>
+      <div class="modal">
+        <button class="close-btn" data-pop-up-order-now-close>
+          <svg class="close-svg">
+            <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+          </svg>
+        </button>
+        <h2 class="pop-up-recipe-title">Order now</h2>
+        <form class="email-form" id="order-form">
+          <div class="email-form-emphasized">
+            <label class="form-input-label" for="name"
+              >Name
+              <input
+                class="form-input-text"
+                type="text"
+                id="name"
+                name="name"
+                required
+                pattern="[A-Za-z]{1,32}"
+                placeholder="Your name"
+            /></label>
+
+            <label class="form-input-label" for="phone"
+              >Phone number
+              <input
+                class="form-input-text"
+                type="tel"
+                id="phone"
+                name="tel"
+                required
+                pattern="[0-9]{10}"
+                placeholder="Your telephone "
+              />
+            </label>
+
+            <label class="form-input-label" for="email"
+              >Email
+              <input
+                class="form-input-text"
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="[^@\s]+@[^@\s]+"
+                placeholder="Your email "
+              />
+            </label>
+
+            <label class="form-input-label" for="message"
+              >Comment required
+              <textarea
+                class="form-input-textarea"
+                id="message"
+                name="comment"
+                rows="5"
+              ></textarea>
+            </label>
+          </div>
+
+          <button class="form-input-button-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+    <main>
+      <section class='hero'>
+  <div class='container'>
+    <div class='hero-wrapper'>
+      <div class='hero-info'>
+        <h1 class='hero-title'>
+          Learn to Cook
+          <span class='decor-green-text'>Tasty Treats'</span> Customizable
+          Masterclass
+        </h1>
+        <p class='hero-text'>
+          TastyTreats - Customize Your Meal with Ingredient Options and
+          Step-by-Step Video Guides.
+        </p>
+        <button type='button' class='button-order-now hero-btn '
+                data-pop-up-order-now-open>
+          Order now
+        </button>
+      </div>
+      <div class='hero-outer-swiper-wrapper'>
+        <div class='swiper mySwiper' style='overflow: visible; z-index: 0'>
+          <span class='loader load-hero'></span>
+
+          <div class='swiper-wrapper'></div>
+          <div
+            class='swiper-pagination'
+            style='
+              width: auto;
+              left: 50%;
+              transform: translateX(var(--swiper-pagination-left-translate-x));
+              bottom: var(--swiper-pagination-bottom-margin);
+            '
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <section>
+  <div class='container'>
+    <div class='filters'>
+      <div class='filters__aside'>
+        <div class='all-categories'>
+  <button type='button' class='all-categories-button button is-active'>
+    All categories
+  </button>
+  <ul class='all-categories-list'>
+  </ul>
+</div>
+
+        <article class="popular-recipes">
+  <h2 class="popular-recipes-title">Popular recipes</h2>
+  <ul class="popular-recipes-list"></ul>
+  <span class="loader load-popular"></span>
+</article>
+
+      </div>
+      <div class="filters__block">
+        <div class="filters__block-main">
+          <form class="search__recipes">
+            <label class="search__recipes-label filters-label" for="search__recipes-input">Search</label>
+            <div class="search__recipes-input__block">
+              <div class="search__icon filters-icon">
+                <svg class="search__icon-svg">
+                  <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#search-magnifier'></use>
+                </svg>
+              </div>
+              <input type="text" id="search__recipes-input" name="search-input" class="search__recipes-input" placeholder="Enter Text">
+              <div class="search__close-icon filters-icon is-hidden">
+                <svg class="search__close-icon-svg">
+                  <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#close-search'></use>
+                </svg>
+              </div>
+            </div>
+          </form>
+          <div class="filter-select" id="select-time">
+            <label class="filters-label" for="toggle-time">Time</label>
+            <div class="filter-select__button-block" data-select="toggle-block">
+              <button type="button" class="filter-select__toggle" id="toggle-time" name="time" value="0 min" data-select="toggle" data-index="-1" data-start="0 min" disabled>0 min</button>
+              <div class="dropdown-icon filters-icon">
+                <svg>
+                  <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#dropdown'></use>
+                </svg>
+              </div>
+            </div>
+            <div class="filter-select__dropdown" id="dropdown-time">
+              <ul class="filter-select__options" id="options-time"></ul>
+              <input type="text" name="select-time" value="" class="filter-select__input-hidden" >
+            </div>
+          </div>
+          <div class="filter-select" id="select-area">
+            <label class="filters-label" for="toggle-area">Area</label>
+            <div class="filter-select__button-block" data-select="toggle-block">
+              <button type="button" class="filter-select__toggle" id="toggle-area" name="area" value="Region" data-select="toggle" data-index="-1" data-start="Region" disabled>Region</button>
+              <div class="dropdown-icon filters-icon">
+                <svg>
+                  <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#dropdown'></use>
+                </svg>
+              </div>
+            </div>
+            <div div class="filter-select__dropdown" id="dropdown-area">
+              <ul class="filter-select__options" id="options-area"></ul>
+              <input type="text" name="select-area" value="" class="filter-select__input-hidden" >
+            </div>
+          </div>
+          <div class="filter-select" id="select-ingredients">
+            <label class="filters-label" for="toggle-ingredients">Ingredients</label>
+            <div class="filter-select__button-block" data-select="toggle-block">
+              <button type="button" class="filter-select__toggle" id="toggle-ingredients" name="ingredient" value="Product" data-select="toggle" data-index="-1" data-start="Product" disabled>Product</button>
+              <div class="dropdown-icon filters-icon">
+                <svg>
+                  <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#dropdown'></use>
+                </svg>
+              </div>
+            </div>
+            <div class="filter-select__dropdown" id="dropdown-ingredients">
+              <ul class="filter-select__options" id="options-ingredients" ></ul>
+              <input type="text" name="select-ingredients" value="" class="filter-select__input-hidden" >
+            </div>
+          </div>
+          <div class="filters-reset">
+            <div class="filters-reset__icon filters-icon">
+              <svg>
+                <use href='/84_js_biggujo/assets/icons-bb57ee8a.svg#close-reset-filter'></use>
+              </svg>
+            </div>
+            <span class="filters-label">Reset the filter</span>
+          </div>
+        </div>
+            <div class="rendered-cards" id="rendered-cards-for-filters">
+    
+    </div>
+
+      </div>
+    </div>
+    <div id="pagination" class="pagination tui-pagination"></div>
+  </div>
+</section>
+
+
+    <!-- Pop-ups -->
+    <div class="backdrop is-hidden" data-pop-up-recipe-modal>
+  <div class="modal">
+    <button class="close-btn" data-pop-up-recipe-close>
+      <svg class="close-svg">
+        <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+      </svg>
+    </button>
+    <div class="modal-recipe-content"></div>
+    <ul class="recipe-btn-list">
+      <li>
+        <button class="btn fav">Add to favorite</button>
+      </li>
+      <li>
+        <button data-pop-up-rating-open class="rating-btn btn">
+          Give a rating
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" data-pop-up-rating-modal>
+  <div class="pop-up-rating-modal">
+    <button class="close-btn" data-pop-up-rating-close>
+      <svg class="close-svg">
+        <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#close-pop-up"></use>
+      </svg>
+    </button>
+    <div class="pop-up-rating">
+      <p class="pop-up-rating-subtitle pop-up-rating-text">Rating</p>
+      <div class="pop-up-rating-section">
+        <p class="pop-up-rating-text pop-up-rating-number">0.0</p>
+        <ul class="pop-up-rating-list">
+          <li class="pop-up-rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="1"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="2"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="3"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="4"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+          <li class="rating-item">
+            <svg
+              class="pop-up-rating-item-icon"
+              data-rating="5"
+              width="24"
+              height="24"
+            >
+              <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#star"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form name="rating-form" class="rating-form">
+      <input
+        name="email"
+        class="form-input-text"
+        type="email"
+        placeholder="Enter email"
+        required
+      />
+      <button type="submit" class="form-input-button-submit btn-send">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- Scroll up -->
+    <a href="#" id="roll_back" class="animate">
+  <svg class="arrow-up">
+    <use href="/84_js_biggujo/assets/icons-bb57ee8a.svg#dropdown"></use></svg
+></a>
+
+
+    
+  </body>
+</html>
